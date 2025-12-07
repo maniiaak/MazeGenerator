@@ -25,6 +25,7 @@ def free_adjacent_rooms(image, x, y):
         ] if position is not None]
 
 def generate_maze(largeur, hauteur):
+    print("Generating maze...", end="\r")
     start_time = time.time()
     # project-root-relative OUTPUT folder
     PROJECT_ROOT = Path(__file__).resolve().parents[1]
